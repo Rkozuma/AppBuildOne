@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="lNK-eU-eyp">
             <objects>
-                <viewController id="gFK-b6-JWh" sceneMemberID="viewController">
+                <viewController id="gFK-b6-JWh" customClass="SecondViewController" customModule="AppBuildOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wF6-kj-0av">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,18 +46,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gg3-eg-b0Q">
-                                <rect key="frame" x="294" y="441" width="100" height="90"/>
+                                <rect key="frame" x="259" y="441" width="135" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
-                                <state key="normal" title="Button2"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOC-Nh-zL5">
-                                <rect key="frame" x="20" y="441" width="110" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
-                                <state key="normal" title="Button1"/>
+                                <state key="normal" title="About AMC">
+                                    <color key="titleColor" red="1" green="0.77407270556799512" blue="0.74220631091692724" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="AboutACM:" destination="4Xq-95-m3k" eventType="touchUpInside" id="bMJ-I9-65G"/>
+                                    <action selector="AboutACM:" destination="4Xq-95-m3k" eventType="touchUpInside" id="Srf-lC-oNF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tg-KE-ans">
+                                <rect key="frame" x="20" y="441" width="135" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
+                                <state key="normal" title="About UHWO">
+                                    <color key="titleColor" red="1" green="0.77407270559999997" blue="0.7422063109" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="AboutUHWO:" destination="4Xq-95-m3k" eventType="touchUpInside" id="Frv-0F-sta"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,7 +73,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="24E-P9-PC8"/>
                     <connections>
-                        <outlet property="AboutACM" destination="hOC-Nh-zL5" id="wg8-yw-DGF"/>
                         <outlet property="AboutUHWO" destination="gg3-eg-b0Q" id="ZGy-EI-cQH"/>
                         <outlet property="FirstLabel" destination="lIE-GE-gaA" id="RjL-yF-Iky"/>
                         <outlet property="UniDes" destination="FMm-no-EGD" id="Ak9-Qp-qd1"/>
